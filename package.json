@@ -41,6 +41,16 @@
     "build-storybook": "build-storybook -s public --no-dll"
   },
   "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "src/**/*.stories.js"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ],
     "extends": [
       "react-app",
       "react-app/jest"
