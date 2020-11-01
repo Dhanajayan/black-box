@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Hello Black box!!!
+          Hello!! Black box
         </p>
         <p>learn react</p> 
       </header>
