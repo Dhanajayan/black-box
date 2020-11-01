@@ -7,3 +7,13 @@ cache:
 script:
   - npm run build
   - npm test
+before_deploy: "echo 'ready?'"
+deploy:
+  provider: heroku
+  api_key:
+    secure: FqoeCsra02M+ot0AZfbFouYKeUeKAZIyNSBR9DJsr7gJNlcrerdjKUYpnyVbYAmGCxPkL+9Y8kiHHntz3SvmJw99iAIovULYazVtR6NC3ospdCMvac7VyeNvGqPolgy94nsaDKYC9v87Iz/HeqXhCKzqztMI/aN1Wed74SjdVOIx9Hnj4filJiMqbT8yRVPRrJm1r+om6NGrkVZcMWJFMs3B9N1f+O+eEA2/nRTLu+aJyxziy/3q2wC72W/DkbZIsHZZdsovPu6uUCkBQJ4Eli9aq3WP4nJxBvL2DRNjmSTNWgnKgNtvn+vxmIOdMOplG7TIq8OjXQ79FWbdglQE4XmX8pnSdp1sJRMBV8B+Nhndv4+eVAvdQmb6rIkO9PU+pDq8hOM48o7aCQua6lIWrf66ncQhTuNepgetoGw8Fz+20Oh9beo4FlXY4LPsTSgKJbNmiKl/eaJ7Mj2vUL/x1fQ/gCSW+ohNRobfgG/ww8IgNba5cMSq1aUg6KXWaa0TgW/GycKVxtEoYpEKN65cqVU9YSdEI+MTB2lOc27AuojzjMwVmWjuLI5E89MMWw67imIskyrCp1oSxhvEnfBMH4q/gCeSs96t2QoOMgqGUFS1Pv9pDICRRgLyt6cjiZEFGdiSW8//jxmZk2x2sicXm65srsfvseDrrwOGNXQqmWM=
+  app:
+    master: black-box-12
+    staging: grim-pumpkin-62149
+    production: ghoulish-demon-72694
+after_deploy: "echo 'Done?'"
