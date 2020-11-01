@@ -1,19 +1,13 @@
 language: node_js
 node_js:
-- 12.18.4
+  - 12.18.4
 cache:
   directories:
-  - node_modules
+    - node_modules
 script:
-- npm run build
-- npm test
-before_deploy: echo 'ready?'
+  - npm run build
+  - npm test
 deploy:
   provider: heroku
   api_key:
-    secure: EN7KXDKuRbtn5U/AkHW22CrSkZrcYk9fsf0aeXSs9X1d6v2lxnYdf+5BbPCrzA8NuMezsWNulL3jiDz09HGBbwVX3A3z1IL+5OGt86L4Fgn6K1BrUnBnCCRaATrz2404bo9t9eDg7jWxyXU3c6hP9Tsl6XiXVU2YDdA8imSRH3Hk4l5X5sFCmekvVEohkHesjC4P3XMf+b8IjUZGKhBPD7bff+EYe20sRhNpItqa841QCairdJM4PWVdQ+cr9F2ksbaaEMCniiKXEnDjPRq5C2EBGZD4POMFbDF1ilBzj14o+wJ9m6zoAlNYLAmngk3Rtg3KvwgAoNehgNJf3AsOQYdwRs6q5thEUsHt/jAcNNqPl/Y+34WOizgPkJK6nCQmaZNGFNIXAJNOB9CBGJ9P4mDWP47ZphGagD6Rf+FYFwum+mEZIKweHshJW0PZWLaMn37qmSJYLvlTMYnDaqjSV12gPHOJlCqEu1l02fe0NQIwwDxqdpFphcCgv9EH/1FAjZ8inYi7L1ooChCZmIwyol/+db0xKi5e7y9QA1B3tcQbvHac5ucKtvV/9bOXgrLXI0jewegJiN04inXmzI+OkZ0JnWkO+nRifjq+e6xxfKTG2/JFaETq80lwZlpmQOqWzYTl+JSEDzhpExgmT8lo7qHyulzsTyk//OLRCfU2QEc=
-  app:
-    master: black-box-12
-    staging: grim-pumpkin-62149
-    production: ghoulish-demon-72694
-after_deploy: echo 'done?'
+    secure: cFmbORfiV9zlUbaNIE1VRORhEQxSn1wddFp22vM0yzMhaxUU5EqzNSH6uus6SAf+CbXwQ8tVbv9q4lLONj27wgxBWEWDXfl6jTKvWjTHj+5PCu2cjl2HWXhqgqM25ZSQlTRy1ANs9pAl5QLCvzA+BjLZwymzoJiJujpG8ZwMcYkfwVpfpRa+UJOrcKQbtnFNnZb10jWkzD9SxG+oC6H3eMMNPJjJiMXrSKUU+MGAdC9oFfctFqMr4vcWnz42554Y1f0TDyjG5uMyVRxCycTQRU/uIb2lF/H3qUPsK3Tq1xt1x55JWgJTlj9AijiTLf5L7EaIxzjIs4Cz2xSEKvnZoFHAZVX7eopvt3UtsRegMLKsB961Tv9Yw/xjeSAPiwbfGQlXxKljqtWCz38f+Z4bYy6bXiSsS/mU3HiuGMsCR59BMCkSXjpUTRDWZrqhSzpGYMWrj9CtIIKv6kx3MdBISdw8e7eKH2OOkGQM0h8ihyFOONaaoxlQvUTxLsX6NS5kQzjgrI26PjB+ai1tNKUTyYqD3thOYAzYUNtOgmTBPe0oQALXeCWrTlHtjxgcCh1aI5BHK7iNPFeceA6gcIk9GC3vgQ9jP9a5Yhyfhw2QDAsNGaTj9C+fOYswYCuE7u3cj+UD5wlp4Hp/aF0DtOFV2Xxa/OJYYbsj5ZdiGm6vH20=
